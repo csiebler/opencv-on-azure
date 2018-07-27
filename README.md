@@ -31,4 +31,15 @@ UPLOAD_CONTAINER_NAME=
 UPLOAD_FILE_NAME=
 ```
 
+Or directly run via CLI:
 
+```
+docker run --rm \
+  --env ACCOUNT_NAME='accountname' \
+  --env SAS_TOKEN='sv=2017-11-09&........' \
+  --env DOWNLOAD_CONTAINER_NAME='videos' \
+  --env DOWNLOAD_FILE_NAME='test.mp4' \
+  --env UPLOAD_CONTAINER_NAME='results' \
+  --env UPLOAD_FILE_NAME='test.csv' \
+  <image_name>
+```

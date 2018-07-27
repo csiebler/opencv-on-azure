@@ -6,5 +6,7 @@ COPY *.py /opencv/
 COPY run.sh /opencv/
 
 WORKDIR /opencv
+RUN chmod +x run.sh
+
 
 ENTRYPOINT ["./run.sh"]

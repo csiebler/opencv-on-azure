@@ -16,4 +16,8 @@ while stream.isOpened():
 
     print(count)
 
+# Write some dummy results
+with open(os.environ['UPLOAD_FILE_NAME'], 'w') as f:
+    f.write('Test\n')
+
 print("Done")
